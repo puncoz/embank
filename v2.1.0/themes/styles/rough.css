@@ -1,0 +1,267 @@
+/***********************************
+Services Slides
+************************************/
+.services-title {
+    margin-top: 480px;
+}
+.services {
+	background: url(../images/bg_slides.png) no-repeat top right;
+    background-size: 100% 100%;
+	width: 90%;
+    height: 140px;
+    margin-top: 50px;
+    
+	padding: 40px 45px 0 45px;
+	overflow: hidden;
+	z-index: 1001;
+}
+.carousel {
+    margin: 0 50px 0 40px;
+}
+.carousel ul li {
+    margin: 10px 8px;
+}
+
+.carousel ul li:nth-child(3) img {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel img {
+    background: url(../images/green-transparent-bg.png) repeat;
+	padding: 5px;
+    width: 140px;
+    height: 85px;
+   
+    opacity: 1;
+    -webkit-transform: scale(1,1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1,1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+.carousel img:hover {
+    opacity: .7;
+    -webkit-transform: scale(1.05,1.07);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.05,1.07);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+
+/*************************************
+Registation
+*************************************/
+.registration {
+    position: relative;
+    margin: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*************************************
+Loading
+*************************************/
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #fff;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+/*********************************
+Account
+**********************************/
+.account-welcome {
+	position: relative;
+	top: 90px;
+	text-align: center;
+}
+
+.welcome {
+	font-size: 40px;
+	color: #fff;
+}
+
+.welcome span {
+	font-weight: bold;
+	color: #afc1f0;
+}
+
+.balance {
+	font-size: 22px;
+	color: #fff;
+}
+
+.balance-amm {
+	background:url(../images/balance-bg.png);
+	background-size: 100% 100%;
+	position: relative;
+	width: 250px;
+	height: 50px;
+	left: 230px;
+	top: -10px;
+	padding-top: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 48px;
+	color: #000;
+}
+
+/******************************
+ADDITIONAL
+*******************************/
+.bal-nav {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    z-index: 1001;
+}
+
+a.button {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: url(../images/bg_button.png);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+a.button:hover {
+    text-decoration: none;
+    background: url(../images/bg_button_over.png);
+    background-size: 100% 100%;
+}
+a.button.active {
+    text-decoration: none;
+    background: url(../images/bg_button_over.png);
+    background-size: 100% 100%;
+}
+
+.bal-trf-form {
+    position: absolute;
+    margin: 150px 135px;
+}
+
+.bal-trf-form div.field input{
+	border: 0;
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	background: #dceef2;
+	width: 295px;
+    float: left;
+    text-align: center;
+}
+.bal-trf-form div.field select{
+	border: 0;
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	background: #dceef2;
+	width: 100px;
+    float: right;
+    border-left: 1px solid #000;
+    text-align: center;
+}
+
+
+
+
+
+
+/**************************************/
+.control {
+    position: relative;
+    margin: 90px 250px;
+}
+.control-item {
+    border-bottom: 1px solid #9b430f;
+    border-top: 1px solid #9b430f;
+    padding: 10px;
+}
+img.bulb {
+    width: 40px;
+    height: 69px;
+    float: left;
+}
+img.fan {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+img.switch {
+    width: 78px;
+    height: 35px;
+    position: relative;
+    float: right;
+    top: 20px;
+    //right: 60px;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 10s linear infinite;
+}

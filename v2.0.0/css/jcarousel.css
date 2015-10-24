@@ -1,0 +1,58 @@
+/*----------------------------------
+File:		jcarousel.css
+Author:		N. Wahlberg (scandiaconsulting.com)
+Site:		LynnCyr.com
+Date:		20091121
+Desc:	
+jCarousel styles
+----------------------------------*/
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+	z-index: 130;
+}
+
+.jcarousel-clip {
+    z-index: 200;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 150;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width: 75px;
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 300;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 300;
+    display: none;
+}

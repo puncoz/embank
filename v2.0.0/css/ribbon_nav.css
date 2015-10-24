@@ -1,0 +1,56 @@
+/***********************************
+Navigation
+************************************/
+#acc-nav {
+    position: relative;
+	float: right;
+	margin-top: 30px;
+    right: -75px;
+}
+
+#acc-nav ul {
+	list-style: none;
+    display: block;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    padding: 60px 0 60px 0;
+    background: url(shad2.png) no-repeat;
+    -webkit-background-size: 50% 100%;
+}
+
+#acc-nav ul li {
+	list-style-type: none;
+	font-size: 20px;
+	margin: 0;
+	margin-left: 8px;
+	padding-left: 5px;
+	float: left;
+    height: 50px;
+}
+
+#acc-nav ul li a {
+    -webkit-transition: all 0.3s ease-out;
+    background: #cbcbcb url(border.png) no-repeat;
+    color: #174867;
+    padding: 7px 15px 7px 15px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    width: 100px;
+    display: block;
+    text-decoration: none;
+    -webkit-box-shadow: 2px 2px 4px #888;
+}
+
+#acc-nav ul li a:hover {
+    background: #ebebeb url(border.png) no-repeat;
+    color: #67a5cd;
+    padding: 7px 15px 7px 30px;
+}
+
+#acc-nav ul li.active a {
+    background: #ebebeb url(border.png) no-repeat;
+    color: #67a5cd;
+    padding: 7px 15px 7px 30px;
+}

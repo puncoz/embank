@@ -1,0 +1,349 @@
+/***************************************
+General Styles
+***************************************/
+html, body {
+	margin: 0;
+	font-family: Verdana,Arial, sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+
+/* TYPE KIT ============================ */
+.content-font, p , .form .row label, #ctr-collab
+	{ font-family: Georgia,serif; } /* Liberation Serif (Thin) */
+.accent-font, nav ul li a , .splash-content .cnt  h1, .btn  a, .hp-footer #ctr-testimonials h2,
+.hp-footer #ctr-featuredclient  .cnt  h2, .hp-footer #ctr-featuredclient  .cnt  h3, .content h1, .sidebar,
+.btn input, #ctr-portnav  ul li a
+	{ font-family: Arial,sans-serif; } /* M+ 1c (Thin) */
+/* TYPE KIT ============================ */
+
+body {
+	background: #333 url(../images/bg_body.jpg) no-repeat top center;
+}
+
+.clear {
+	clear: both;
+}
+
+p {
+	color: #492211;
+	font-size: 16px;
+	line-height: 20px;
+	font-style: normal;
+}
+
+a {
+	color: #cf4700;
+	text-decoration: none;
+}
+a:hover {
+	/*text-shadow: 0 0 10px #ccc;*/
+	color: #492211;
+	text-decoration: underline;
+}
+:focus {
+	border: 0;
+	outline: none;
+}
+
+img { border: 0; }
+img.preload { display: none; }
+
+form {
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+}
+
+div.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/***************************************
+Server Warning
+***************************************/
+#server-warning {
+	position: absolute;
+	top: 10px;
+	left: 200px;
+	background: #fff;
+	border: 5px solid #ff1010;
+	padding: 5px;
+	width: 650px;
+	z-index: 10000;
+}
+#server-warning  a.close {
+	background: #999;
+	padding: 3px;
+	color: #333;
+	text-align: right;
+	font-weight: bold;
+}
+
+/***************************************
+Specific Styles
+***************************************/
+#layout {
+	position: relative;
+	margin: 40px auto 0 auto;
+	padding: 60px 0 0 60px;
+	width: 1060px;
+	height: 900px;
+	background: url(../images/bg_shade.png) no-repeat 0 0;
+}
+
+.main-body, .home {
+	position: relative;
+	background: url(../images/bg_body_inner_fff.jpg) no-repeat 0 0;
+	width: 1000px;
+	height: 800px;
+}
+.home { /* set background for homepage (without white alpha) */
+	background: url(../images/bg_body_inner.jpg) no-repeat 0 0;
+}
+
+footer {
+	text-align: right;
+	margin-top: 14px;
+	margin-right: 97px;
+	font: normal 11px Verdana,sans-serif;
+	color: #737373;
+}
+
+/***************************************
+Header Styles
+***************************************/
+header  {
+	margin: 0 20px 0 30px;
+}
+
+header  .logo, header  .tag-line {
+	float: left;
+}
+
+header  .logo a {
+	width: 135px;
+	height: 54px;
+	background: url(../images/logo.png) no-repeat 0 0;
+	margin-top: 25px;
+	padding-right: 20px;
+	display: block;
+    border-right: 1px solid #999;
+}
+
+header  .tag-line {
+	//width: 247px;
+    width: 300px;
+	height: 40px;
+	//background: url(../images/img_logo_divider.png) no-repeat 0 0;
+	//margin-top: 28px;
+    margin-top: 17px;
+	color: #0f8aa6;
+	font-size: 18px;
+    font-weight: bolder;
+	//padding: 14px 0 0 20px;
+    padding: 14px 0 0 10px;
+}
+
+/***********************************
+Navigation
+************************************/
+nav {
+	float: right;
+	margin-top: 30px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	font-size: 20px;
+	margin: 0;
+	margin-left: 8px;
+	padding-left: 5px;
+	float: left;
+    height: 50px;
+}
+
+nav ul li a {
+    width: 100px;
+	//height: 59px;
+    
+    display: block;
+	font-size: 16px;
+	color: #492211;
+	padding-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	background: url(../images/bg_button.png) no-repeat 0 0;
+    background-size: 100% 100%;
+	height: 30px;
+	border: 0;
+    font-weight: bolder;
+}
+
+nav ul li a:hover {
+    background: url(../images/bg_button_over.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+
+nav ul li.active a {
+    background: url(../images/bg_portfolio_btn.png) no-repeat 0 0;
+    background-size: 100% 100%;
+    text-decoration: none;
+}
+
+/***********************************
+Brown Splash
+************************************/
+.splash-content {
+	position: absolute;
+	top: 71px;
+	right: 0;
+	width: 698px;
+	height: 454px;
+	background: url(../images/bg_brown_splatter.png) no-repeat 0 0;
+	z-index: 100;
+}
+
+.register {
+    margin: 0 auto;
+    top: 200px;
+    right: 150px;
+    background-size: 100% 100%;
+}
+
+.splash-content .btn {
+	margin-left: 310px;
+}
+
+.splash-content .cnt {
+	padding: 90px 35px 0 125px;
+	text-align: right;
+}
+
+.splash-content .cnt  h1 {
+	font-size: 25px;
+	color: #fff;
+	line-height: 27px;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.splash-content .cnt  p {
+	color: #7abfcf;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+
+/***********************************
+Form and Button
+************************************/
+.btn , .btn input{
+	width: 178px;
+	height: 59px;
+}
+.submit  a, .submit  a:hover, .btn input {
+	display: block;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 22px;
+	text-align: center;
+	text-decoration: none;
+	background: url(../images/bg_button.png) no-repeat 0 0;
+	height: 37px;
+	border: 0;
+}
+.submit  a:hover, .btn input:hover {
+	background: url(../images/bg_button_over.png) no-repeat 0 0;
+}
+.btn input { height: 59px; padding-top: 3px; cursor: pointer;}
+
+
+.form , .sidebar{
+	float: left;
+}
+
+.form {
+	width: 400px;
+}
+
+.form label, .form div.field {
+	float: left;
+}
+
+.form label, .form .textbox label {
+	width: 80px;
+	text-align: right;
+	margin-right: 10px;
+	font-size: 18px;
+	color: #492211;
+	margin-top: 18px;
+	font-style: italic;
+}
+
+
+.form div.field{
+	//width: 275px;
+    width: 400px;
+	height: 50px;
+	background: url(../images/bg_txt_field.png) no-repeat 0 0;
+    background-size: 100% 100%;
+	padding: 15px 20px 0 10px;
+}
+
+.form div.field input{
+	border: 0;
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	background: #dceef2;
+	width: 400px;
+    //width: 99%;
+    text-align: center;
+}
+
+.form .textbox label {
+	margin: 16px 0 0 0;
+	float: none;
+	display: block;
+	width: 250px;
+	text-align: left;
+}
+.form .textbox div.field {
+	margin: 0;
+	float: none;
+	width: 392px;
+	width: 492px;
+	height: 204px;
+	background: url(../images/bg_msg_field.png) no-repeat 0 0;
+    background-size: 100% 100%;
+	border: 0;
+	padding: 20px 20px 0 10px;
+	margin-left: 5px;
+}
+.form div.field textarea{
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	font-family: Arial;
+	background: #dceef2;
+	border: 0;
+	width: 363px;
+	height: 160px;
+}
+
+/***********************************
+EXTRA
+************************************/

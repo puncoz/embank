@@ -1,0 +1,99 @@
+.bal-nav {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    z-index: 1001;
+}
+
+a.button {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: url(../images/bg_button.png);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+a.button:hover {
+    text-decoration: none;
+    background: url(../images/bg_button_over.png);
+    background-size: 100% 100%;
+}
+a.button.active {
+    text-decoration: none;
+    background: url(../images/bg_button_over.png);
+    background-size: 100% 100%;
+}
+
+.bal-trf-form {
+    position: absolute;
+    margin: 100px 50px;
+}
+
+.bal-trf-form div.field input{
+	border: 0;
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	background: #dceef2;
+	width: 295px;
+    float: left;
+    text-align: center;
+}
+.bal-trf-form div.field select{
+	border: 0;
+	font-size: 20px;
+	font-weight: 600px;
+	color: #666;
+	background: #dceef2;
+	width: 100px;
+    float: right;
+    border-left: 1px solid #000;
+    text-align: center;
+}
+
+
+
+
+
+
+/**************************************/
+.control {
+    position: relative;
+    margin: 90px 250px;
+}
+.item {
+    border-bottom: 1px solid #9b430f;
+    border-top: 1px solid #9b430f;
+    padding: 10px;
+}
+img.bulb {
+    width: 40px;
+    height: 69px;
+    float: left;
+}
+img.fan {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+img.switch {
+    width: 78px;
+    height: 35px;
+    position: relative;
+    float: right;
+    top: 20px;
+    //right: 60px;
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 10s linear infinite;
+}
